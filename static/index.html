@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayden AI - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Jayden AI" class="hero-image">
+            <h1>Jayden AI</h1>
+            <p>Building AI chatbots and stunning websites.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/chatbot.png" alt="AI Chatbot">
+                <h3>AI Chatbot</h3>
+                <p>An intelligent chatbot that helps businesses automate customer support.</p>
+                <a href="https://ai-chatbot-1-wudl.onrender.com" target="_blank" class="btn">Try AI Chatbot</a>
+            </div>
+            <div class="project-card">
+                <img src="images/hero.jpg" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Creating modern and visually stunning websites with responsive designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
