@@ -1,14 +1,31 @@
-// Smooth scrolling when clicking navigation links
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
-    });
+// Scroll Animation for Intro Text
+document.addEventListener("DOMContentLoaded", function() {
+    const introSection = document.querySelector(".intro");
+
+    function showIntro() {
+        const sectionPos = introSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.3;
+
+        if (sectionPos < screenPos) {
+            introSection.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", showIntro);
 });
 
-// Contact form submission alert
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Thanks for reaching out! I'll get back to you soon.");
+document.addEventListener("DOMContentLoaded", function() {
+    const introText = document.querySelector(".intro-text"); // Select intro text
+
+    function checkScroll() {
+        const textPosition = introText.getBoundingClientRect().top; // Get position
+        const screenPosition = window.innerHeight / 1.3; // Trigger when 70% of screen
+
+        if (textPosition < screenPosition) {
+            introText.classList.add("show"); // Add animation class
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll); // Run function on scroll
 });
+
