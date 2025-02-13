@@ -1,18 +1,19 @@
 // Scroll Animation for Intro Text
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const introSection = document.querySelector(".intro");
 
-    function showIntro() {
-        const sectionPos = introSection.getBoundingClientRect().top;
-        const screenPos = window.innerHeight / 1.3;
+    function handleScroll() {
+        const sectionPosition = introSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
 
-        if (sectionPos < screenPos) {
-            introSection.classList.add("show");
+        if (sectionPosition < screenPosition) {
+            introSection.classList.add("visible");
         }
     }
 
-    window.addEventListener("scroll", showIntro);
+    window.addEventListener("scroll", handleScroll);
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const introText = document.querySelector(".intro-text"); // Select intro text
