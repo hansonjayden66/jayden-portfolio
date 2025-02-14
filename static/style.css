@@ -109,7 +109,7 @@ nav ul li a {
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #00ff73, #0095ff, #7300ff, #ff0095, #ff0000);
+    background: linear-gradient(45deg, #1e3a8a, #2563eb, #38bdf8, #5eead4, #60a5fa, #7c3aed);
     background-size: 400%;
     border-radius: 12px;
     z-index: -1;
